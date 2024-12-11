@@ -6,7 +6,7 @@ app.use(express.json()); // Middleware to parse JSON body
 app.use(cors()); // Allow cross-origin requests
 
 // POST endpoint to calculate age
-app.post('/DOB-calculator', (req, res) => {
+app.post('/dob-calculator', (req, res) => {
   const { dob } = req.body;
 
   if (!dob) {
